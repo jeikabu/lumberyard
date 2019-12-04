@@ -16,6 +16,7 @@
 SUBFOLDERS = [
     'Editor',
     'Plugins',
+	'EditorRustPlugin',
     ]
 
 def build(bld):

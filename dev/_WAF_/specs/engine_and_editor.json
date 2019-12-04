@@ -5,6 +5,7 @@
     "modules" :
     [
         "Editor",
+        "EditorRustPlugin",
         "AssetBuilder",
         "AssetProcessor",
         "AssetProcessorBatch",

@@ -1,0 +1,9 @@
+{
+    "none": {
+        "Root": [
+            "rust_plugin_main.cpp",
+            "EditorRustPlugin.cpp",
+            "EditorRustPlugin.h"
+        ]
+    }
+}

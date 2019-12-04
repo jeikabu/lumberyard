@@ -1,0 +1,25 @@
+import os
+def build(bld):
+	
+    kw = dict(
+        target                              = 'EditorRustPlugin',
+        vs_filter                           = 'Sandbox',
+        copyright_org                       = 'Amazon-CryTek',
+        disable_pch                         = True,
+        file_list                           = 'RustPlugin/editor_rust_plugin.waf_files',
+        platforms                           = ['all'],
+        configurations                      = ['all'],
+        exclude_monolithic                  = True,
+        #client_only                         = True,
+		export_includes = ['.'],
+        use                                 = ['AzCore', 'EditorLib'],#, 'AzFramework', 'EditorUI_QT', 'CryCommon', 'AzToolsFramework'
+		defines                             = ['PLUGIN_EXPORTS'],
+		#win_linkflags                       = ['/OPT:NOREF', '/WHOLEARCHIVE'],
+		#win_features       = ['crcfix'],
+		includes            = [ '.',
+                                bld.Path('Code/Sandbox/Editor'),
+                                bld.Path('Code/Sandbox/Editor/Include'),
+								bld.Path('Code/CryEngine/CryCommon'),
+								],
+    )
+    bld.CryEngineStaticLibrary(**kw)
