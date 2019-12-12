@@ -25,6 +25,7 @@
         "CryRenderGL",
         "CryRenderMetal",
         "CryRenderNULL",
-        "LmbrAWS"
+        "LmbrAWS",
+        "RustAz"
     ]
 }

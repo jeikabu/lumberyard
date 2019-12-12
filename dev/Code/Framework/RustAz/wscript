@@ -10,21 +10,11 @@
 #
 ########################################################################################
 
+from waflib.Configure import conf
+from waflib import Context, Utils, Logs
+from waflib import Errors
 
-SUBFOLDERS = [ 
-    'AzCore', 
-    'AzFramework', 
-    'AzGameFramework',
-    'AzQtComponents',
-    'AzTest',
-    'AzToolsFramework', 
-    'Crcfix',
-    'GFxFramework',
-    'GridMate',
-	'RustAz',
-    'Tests'
-    ]
-
+SUBFOLDERS = [ 'RustAz' ]
 
 def build(bld):
 

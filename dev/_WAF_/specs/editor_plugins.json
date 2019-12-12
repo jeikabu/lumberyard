@@ -1,0 +1,25 @@
+{
+    "description": "Editor Plugins",
+    "visual_studio_name": "Editor Plugins",
+
+    "modules" :
+    [
+        "AssetTagging",
+        "ComponentEntityEditorPlugin",
+        "CryDesigner",
+        "DeploymentTool",
+        "EditorAnimation",
+        "EditorAssetImporter",
+        "EditorModularBehaviorTree",
+        "EditorUI_QT",
+        "FBXPlugin",
+        "FFMPEGPlugin",
+        "MaglevControlPanel",
+        "MetricsPlugin",
+        "ParticleEditorPlugin",
+        "PerforcePlugin",
+        "ProjectSettingsTool",
+        "UiCanvasEditor",
+        "RustAz"
+    ]
+}
